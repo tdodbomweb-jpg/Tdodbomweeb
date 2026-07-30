@@ -9,6 +9,21 @@
 
 <style>
 
+.instagram-btn{
+    display:inline-block;
+    margin-top:0px;
+    background:rgba(255,215,0,0.65);
+    color:#FFFFFF;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+        0 0 5px #FFD700,
+        0 0 10px #FFD700;
+    box-shadow:0 0 15px #FFD700;
+    transition:.3s;
+}
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -22,10 +37,13 @@ body{
     max-width:420px;
     margin:30px auto;
     background:#1a0d05;
-    border:3px solid #d4af37;
+    border:3px solid #FFFFFF;
     border-radius:25px;
     padding:20px;
-    box-shadow:0 0 25px #d4af37;
+    box-shadow:
+        0 0 10px #FFFFFF,
+        0 0 20px #FFD700,
+        0 0 30px #FFD700;
 }
 
 .logo{
@@ -47,11 +65,12 @@ h1{
 
 .player{
     position:relative;
-    background:url("banner.jpeg.jpeg") center center;
+    background-image:url("banner.jpeg");
     background-size:cover;
+    background-position:center;
     border-radius:20px;
     overflow:hidden;
-    padding:25px;
+    padding:20px;
 }
 
 .player::before{
@@ -120,16 +139,21 @@ audio{
 }
 
 button{
-    background:#FFD700;
-    color:black;
-    border:none;
+    background:rgba(255,215,0,0.45);
+    color:white;
+    border:2px solid rgba(255,215,0,0.80);
     border-radius:35px;
     padding:15px 35px;
     font-size:20px;
     font-weight:bold;
     cursor:pointer;
     transition:.3s;
-    box-shadow:0 0 15px #FFD700;
+    text-shadow:
+        0 0 5px #FFD700;
+    box-shadow:
+        0 0 15px #FFD700,
+        0 0 25px rgba(255,215,0,0.60);
+    backdrop-filter:blur(5px);
 }
 
 button:hover{
@@ -182,6 +206,11 @@ button:hover{
 <p class="info">
 🎵 Tocando agora
 </p>
+<a href="https://www.instagram.com/tdodbomweb/" target="_blank" class="instagram-btn">
+📸 @tdodbomweb
+</a>
+
+}
 
 </div>
 
